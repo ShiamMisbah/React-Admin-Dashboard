@@ -23,9 +23,10 @@ const Team = () => {
                 return (
                     <Box
                         width="60%"
-                        m="0 auto"
+                        m="auto 0"
                         p="5px"
                         display="flex"
+                        alignItems="center"
                         justifyContent="center"
                         backgroundColor={
                             access === "admin" ? colors.greenAccent[600] : colors.greenAccent[700]
@@ -55,12 +56,14 @@ const Team = () => {
                     },
                     "& .MuiDataGrid-cell": {
                         borderBottom: "none",
+                        display: "flex",
+                        alignItems: "center",
                     },
                     "& .name-column--cell": {
                         color: colors.greenAccent[300],
                     },
                     "& .MuiDataGrid-columnHeaders": {
-                        backgroundColor: colors.blueAccent[700],
+                        background: colors.blueAccent[700],
                         borderBottom: "none",
                     },
                     "& .MuiDataGrid-virtualScroller": {
@@ -75,9 +78,7 @@ const Team = () => {
                     },
                 }}
             >
-                <DataGrid 
-                    rows={mockDataTeam}
-                    columns={columns}
+                <DataGrid rows={mockDataTeam} columns={columns}
                 />
             </Box>
         </Box>
