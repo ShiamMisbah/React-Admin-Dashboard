@@ -1281,3 +1281,30 @@ export const mockGeographyData = [
     value: 171135,
   },
 ];
+
+export const faqData = [
+  {
+    summary: 'Question 1',
+    details: 'Answer 1'
+  },
+  {
+    summary: 'Question 2',
+    details: 'Answer 2'
+  },
+  {
+    summary: 'Question 3',
+    details: 'Answer 3'
+  },
+  {
+    summary: 'Question 4',
+    details: 'Answer 4'
+  },
+  {
+    summary: 'Question 5',
+    details: 'Answer 5'
+  },
+  {
+    summary: 'Question 6',
+    details: 'Answer 6'
+  },
+]
